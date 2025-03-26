@@ -10,9 +10,10 @@ type things = {
 }
 export function ImageDiv(things : things){ 
 
-    return <div className={ `${things.colspan} rounded-xl bg-red-300  p-0 m-3 relative flex items-${things.textV} justify-${things.textH }  overflow-hidden `}>
-             <h3 className="drop-shadow-lg text-red-700 font-bold text-xl m-3 z-10 absolute text">{things.text}</h3>
-            <img className=" object-cover  h-full w-auto absolute;" src={things.imageSrc} alt="" />               
+    return <div className={ `${things.colspan || " "} object-cover rounded-xl bg-red-300 h-full w-full  p-0  relative   overflow-hidden  `}>
+             
+            <img className=" w-full h-full object-cover inset-0  absolute;" src={things.imageSrc} alt="" />         
+            <h3 className={`drop-shadow-lg w-full p-4 h-full inset-0 text-slate-400 flex items-${things.textV} justify-${things.textH} font-bold text-xl m-3 z-10 absolute text`}>{things.text}</h3>      
         </div>
     
 }
