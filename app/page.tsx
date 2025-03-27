@@ -1,7 +1,7 @@
-import Image from "next/image";
+//import Image from "next/image";
 import Hero from "./components/hero";
 import Navbar from "./components/Navbar";
-import ImageDiv from "./components/ImageDiv";
+//import ImageDiv from "./components/ImageDiv";
 import BentoGrid from "./components/BentoGrid";
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
 
             </div>
         </main>
-        <div className="h-150dvh w-screen flex  justify-center items-center  bg-gray-500 ">
+        <div className="h-100dvh w-screen flex  justify-center items-center  bg-gray-500 ">
           <BentoGrid/>
             
          </div>

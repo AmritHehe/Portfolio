@@ -1,10 +1,12 @@
-import React, { useState } from "react";  
+
+import React from "react";  
+//import { useState } from "react";
 import { Arrow } from "./arrow";
 import { Spotlight } from "./ui/spotlight";
-import { Boxes, BoxesCore } from "./ui/Background-boxes";
+//import { Boxes} from "./ui/Background-boxes";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 import * as motion from "motion/react-client"
-import { anticipate, easeIn, hover } from "motion";
+//import { anticipate, easeIn, hover } from "motion";
 
 
 export function Hero( ){ 
