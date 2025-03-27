@@ -23,7 +23,7 @@ export function Hero( ){
     <Spotlight className="top-0  md:top-40 h-screen " fill='white'/>
     <Spotlight className="scale-x-[-1] top-0  md:top-40 h-screen" />
         <p className="tracking-widest font-normal">DYNAMIC WEB MAGIC WITH NEXT.JS</p>
-        <h1 className="text-5xl my-24 sm:text-7xl font-bold text-center m-8 inline">
+        <h1 className="text-5xl my-24 sm:text-6xl md:text-7xl font-bold text-center m-8 inline">
             Transforming Concepts into Seamless <p className="inline text-purple-300 ">User Experiences</p>
         </h1>
         {/* <h2 >
