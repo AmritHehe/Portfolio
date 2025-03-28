@@ -22,9 +22,9 @@ export function Hero( ){
     <div className="flex flex-col items-center  sm:w-5/6 z-20">
     <Spotlight className="top-0  md:top-40 h-screen " fill='white'/>
     <Spotlight className="scale-x-[-1] top-0  md:top-40 h-screen" />
-        <p className="tracking-widest font-normal">DYNAMIC WEB MAGIC WITH NEXT.JS</p>
-        <h1 className="text-5xl my-24 sm:text-6xl md:text-7xl font-bold text-center m-8 inline">
-            Transforming Concepts into Seamless <p className="inline text-purple-300 ">User Experiences</p>
+        <p className="tracking-widest font-normal">SEO-optimized? Check. Responsive? Double check. Hooked? You bet!</p>
+        <h1 className="text-5xl my-24 sm:text-6xl md:text-7xl font-bold text-center m-8 font-shrikhand inline">
+        Serving up websites that feels like <p className="inline text-purple-300 ">  home</p>
         </h1>
         {/* <h2 >
             Hi! I am  Amrit , A Mern Stack Dev based in Delhi

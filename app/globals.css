@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 :root {
   --background: #ffffff;
@@ -10,6 +13,8 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-roboto: "Roboto", sans-serif;
+  --font-shrikhand: "Shrikhand" , sans-serif;
   --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
 }
 
@@ -23,7 +28,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 @keyframes spotlight {
   0% {
