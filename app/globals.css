@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap"); */
 
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
@@ -14,8 +14,15 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-roboto: "Roboto", sans-serif;
-  --font-shrikhand: "Shrikhand" , sans-serif;
   --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
+  --font-inter: var(--font-inter);
+  --font-Robomono: var(--font-mono); 
+  --font-tangerine: var(--font-tangerine);
+  --font-banger: var(--font-banger);
+  --font-cinzel: var(--font-cinzel);
+  --font-cormorant: var(--font-cormorant);
+  --font-young: var(--font-young);
+ 
 }
 
 @media (prefers-color-scheme: dark) {
@@ -28,6 +35,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
+  
   /* font-family: Arial, Helvetica, sans-serif; */
 }
 @keyframes spotlight {
@@ -39,4 +47,8 @@ body {
     opacity: 1;
     transform: translate(-50%, -40%) scale(1);
   }
+}
+#hehe{
+  /* text-shadow: 0px 0px  5px rgba(46,59,234,0.4); */
+  filter: url(#grainy);
 }
