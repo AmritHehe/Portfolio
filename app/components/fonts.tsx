@@ -1,4 +1,4 @@
-import React from "react";
+//import React from "react";
 
 import { Inter,  Tangerine ,Bangers ,Cinzel_Decorative , Cormorant , Young_Serif} from 'next/font/google'
 // import { px } from "motion/react";

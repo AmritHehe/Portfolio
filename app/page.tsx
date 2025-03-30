@@ -30,6 +30,10 @@ export default function Home() {
         <div className="h-500 w-screen flex items-center justify-center bg-black ">
             <Projects/>
         </div>
+        <div className="h-100dvh w-screen flex bg-black  justify-center items-center  ">
+          <BentoGrid/>
+            
+         </div>
         </div> 
          
       </>
