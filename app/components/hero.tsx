@@ -101,7 +101,7 @@ export function Hero( ){
         Serving up websites that feels like <p className="inline text-purple-300 ">  home</p>
         </h1> */
         }
-        <div  className="w-full flex  h-full justify-center scale-150 drop-shadow-[0px_0px_3px_rgba(16,39,108,0.8)] sm:scale-200 md:scale-250 lg:scale-400 my-48 p-24 items-center size-5">
+        <div  className="w-full flex  h-full justify-center scale-150 drop-shadow-[0px_0px_3px_rgba(16,39,108,0.8)] sm:scale-200 md:scale-250 lg:scale-400 my-48  items-center size-5">
         <h1 className=  {`${tangerine.variable} text-8xl inline font-tangerine`}>P  
           <h1 className={`${cormorant.variable} text-6xl font-cormorant inline-block`}>or</h1>
           <h1 className={`${tangerine.variable} text-7xl mr-1 font-tangerline inline-block`}>t</h1>
