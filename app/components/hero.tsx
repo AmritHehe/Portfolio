@@ -7,10 +7,10 @@ import { Spotlight } from "./ui/spotlight";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 import * as motion from "motion/react-client"
 //import { anticipate, easeIn, hover } from "motion";
-import Image from "next/image";
+// import Image from "next/image";
 
-import { Inter,  Tangerine ,Bangers ,Cinzel_Decorative , Cormorant , Young_Serif, Exo} from 'next/font/google'
-import { px } from "motion/react";
+import { Inter,  Tangerine ,Bangers ,Cinzel_Decorative , Cormorant , Young_Serif} from 'next/font/google'
+// import { px } from "motion/react";
  
 export const inter = Inter({
   subsets: ['latin'],
