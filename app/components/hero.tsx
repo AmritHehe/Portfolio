@@ -13,6 +13,7 @@ import { ysf,cormorant,tangerine } from "./fonts";
 
 
 
+
 export function Hero( ){ 
     
 
@@ -26,7 +27,23 @@ export function Hero( ){
     {/* <div className="absolute bottom-0 left-0 w-[450px] h-[450px] bg-[rgb(255,180,220)] blur-[160px] opacity-60 rounded-full"></div>
  
     <div className="absolute top-0 right-0 w-[450px] h-[450px] bg-[rgb(130,100,255)] blur-[160px] opacity-60 rounded-full"></div> */}
-     <div className="absolute bottom-0 left-0 w-[60vw] h-[60vw] max-w-[500px] max-h-[500px] bg-[rgb(255,180,220)] blur-[20vw] 2xl:blur-[10vw] opacity-80 rounded-full"></div>
+     <motion.div 
+     initial={{
+      y:0
+     }}
+     animate={{
+      y:-400
+     }}
+     transition={{
+      duration:3,
+      // delay:1,
+      repeat : Infinity,
+      repeatDelay:2,
+      repeatType:"reverse",
+      ease :"anticipate"
+     }}
+     
+     className="absolute bottom-0 left-0 w-[60vw] h-[60vw] max-w-[500px] max-h-[500px] bg-[rgb(255,180,220)] blur-[20vw] 2xl:blur-[10vw] opacity-80 rounded-full"></motion.div>
       {/* <svg>
         <filter id="grainy">
           <feTurbulence 
@@ -38,7 +55,24 @@ export function Hero( ){
       </svg> */}
       
 
-      <div className="absolute top-0 right-0 w-[60vw] h-[60vw] max-w-[500px] max-h-[500px] bg-[rgb(130,100,255)] blur-[20vw] 2xl:blur-[10vw]   opacity-80 rounded-full"></div>
+      <motion.div
+       initial={{
+        y:0,
+        
+       }}
+       animate={{
+        y:400,
+       
+       }}
+       transition={{
+        duration:3,
+        // delay:1,
+        repeat : Infinity,
+        repeatDelay:2,
+        repeatType:"reverse",
+        ease :"anticipate"
+       }}
+      className="absolute top-0 right-0 w-[60vw] h-[60vw] max-w-[500px] max-h-[500px] bg-[rgb(130,100,255)] blur-[20vw] 2xl:blur-[10vw]   opacity-80 rounded-full"></motion.div>
       
       {/* <Image 
          className="object-cover absolute inset-0 blur-sm"
@@ -50,7 +84,7 @@ export function Hero( ){
         // priority
       /> */}
     </div>
-    <div className={`${cormorant.variable} flex flex-col items-center  sm:w-5/6 z-20`}>
+    <div className={`${cormorant.variable}  overflow-hidden flex flex-col items-center  sm:w-5/6 z-20`}>
       <Spotlight className="top-0  md:top-40 h-screen " fill='black'/>
       {/* <Spotlight className="scale-x-[-1] top-0  md:top-40 h-screen" />
        */}
@@ -59,15 +93,61 @@ export function Hero( ){
         Serving up websites that feels like <p className="inline text-purple-300 ">  home</p>
         </h1> */
         }
-        <div  className="w-full flex  h-full justify-center scale-150 drop-shadow-[0px_0px_3px_rgba(16,39,108,0.8)] sm:scale-200 md:scale-250 lg:scale-400 my-48  items-center size-5">
+        <motion.div 
+        initial={{
+          opacity:0,
+          scale:0.7,
+
+
+        }}
+        animate ={{
+          opacity : 1,
+          scale:1,
+          x:[150,0]
+        
+        }}
+        transition={{
+          duration:1.5,
+          // delay : 0.5,
+          ease : "anticipate"
+        }}
+        className="w-full   flex overflow-hidden h-full justify-center scale-150 drop-shadow-[0px_0px_3px_rgba(16,39,108,0.8)] sm:scale-200 md:scale-250 lg:scale-400 my-48  items-center size-5">
         <h1 className=  {`${tangerine.variable} text-8xl inline font-tangerine`}>P  
-          <h1 className={`${cormorant.variable} text-6xl font-cormorant inline-block`}>or</h1>
-          <h1 className={`${tangerine.variable} text-7xl mr-1 font-tangerline inline-block`}>t</h1>
-          <h1 className={`${cormorant.variable} text-6xl font-cormorant inline-block`}>foli</h1>
+
+        <motion.h1 animate={{
+          x:[100,0],
+          scale:[1.2 ,1]
+        }}
+        transition={{
+          duration:0.7,
+          delay:0.7,
+          ease:"anticipate"
+        }}
+         className={`${cormorant.variable} text-6xl  font-cormorant inline-block`}>or</motion.h1>
+
+        <motion.h1 animate={{
+          y:[100,0],
+          rotate:[360,0]
+        }}
+        transition={{
+          duration:0.7,
+          delay:1.2,
+          ease:"anticipate"
+        }} className={`${tangerine.variable} text-7xl mr-1 font-tangerline inline-block`}>t</motion.h1>
+        
+        <motion.h1 animate={{
+          y:[-100,0]
+        }}
+        transition={{
+          duration:0.7,
+          delay:0.7,
+          ease:"anticipate"
+        }} className={`${cormorant.variable} text-6xl font-cormorant inline-block`}>foli</motion.h1>
           <h1 className={`${ysf.variable} text-5xl font-young font-thin inline-block`}>o</h1>
         </h1>
         <br />
-        </div>
+        </motion.div>
+       
         {/* <div>Amrit </div> */}
         {/* <h2 >
             Hi! I am  Amrit , A Mern Stack Dev based in Delhi

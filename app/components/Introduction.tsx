@@ -9,7 +9,10 @@ export function Introduction(){
     }} 
     whileInView={{opacity: 1}} 
     viewport={{
-        amount: "all"
+        amount: "some"
+    }}
+    transition={{
+        duration:0.5
     }}
     className="flex flex-col item-center h-full w-full w-sm sm:w-lg md:w-xl justify-center relative">
         <p className="text-xl">
