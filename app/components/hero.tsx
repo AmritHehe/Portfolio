@@ -39,11 +39,11 @@ export function Hero( ){
       // delay:1,
       repeat : Infinity,
       repeatDelay:2,
-      repeatType:"reverse",
+      repeatType:"mirror",
       ease :"anticipate"
      }}
      
-     className="absolute bottom-0 left-0 w-[60vw] h-[60vw] max-w-[500px] max-h-[500px] bg-[rgb(255,180,220)] blur-[20vw] 2xl:blur-[10vw] opacity-80 rounded-full"></motion.div>
+     className="absolute bottom-0 left-0 w-[60vw] h-[60vw] max-w-[500px] max-h-[500px] bg-[rgb(255,180,220)] z-[-1] blur-[20vw] 2xl:blur-[10vw] opacity-80 rounded-full"></motion.div>
       {/* <svg>
         <filter id="grainy">
           <feTurbulence 
@@ -69,10 +69,10 @@ export function Hero( ){
         // delay:1,
         repeat : Infinity,
         repeatDelay:2,
-        repeatType:"reverse",
+        repeatType:"mirror",
         ease :"anticipate"
        }}
-      className="absolute top-0 right-0 w-[60vw] h-[60vw] max-w-[500px] max-h-[500px] bg-[rgb(130,100,255)] blur-[20vw] 2xl:blur-[10vw]   opacity-80 rounded-full"></motion.div>
+      className="absolute top-0 right-0 w-[60vw] h-[60vw] max-w-[500px] max-h-[500px] bg-[rgb(130,100,255)] z-[-1] blur-[20vw] 2xl:blur-[10vw]   opacity-80 rounded-full"></motion.div>
       
       {/* <Image 
          className="object-cover absolute inset-0 blur-sm"
