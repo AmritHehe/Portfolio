@@ -6,7 +6,7 @@ import { Spotlight } from "./ui/spotlight";
 //import { Boxes} from "./ui/Background-boxes";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 import * as motion from "motion/react-client"
-//import { anticipate, easeIn, hover } from "motion";
+// import { anticipate, easeIn, hover } from "motion";
 // import Image from "next/image";
 
 import { ysf,cormorant,tangerine } from "./fonts";
@@ -23,25 +23,25 @@ export function Hero( ){
     {/* <Boxes/> */}
     
     
-    <div  className="absolute inset-0 w-full "  >
+    <div  className="absolute inset-0 w-full  "  >
     {/* <div className="absolute bottom-0 left-0 w-[450px] h-[450px] bg-[rgb(255,180,220)] blur-[160px] opacity-60 rounded-full"></div>
  
     <div className="absolute top-0 right-0 w-[450px] h-[450px] bg-[rgb(130,100,255)] blur-[160px] opacity-60 rounded-full"></div> */}
      <motion.div 
-    //  initial={{
-    //   y:0
-    //  }}
-    //  animate={{
-    //   y:-400
-    //  }}
-    //  transition={{
-    //   duration:3,
-    //   // delay:1,
-    //   repeat : Infinity,
-    //   repeatDelay:2,
-    //   repeatType:"mirror",
-    //   ease :"anticipate"
-    //  }}
+     initial={{
+      y:0
+     }}
+     animate={{
+      y:-250
+     }}
+     transition={{
+      duration:4,
+      delay:1,
+      repeat : Infinity,
+      repeatDelay:2,
+      repeatType:"mirror",
+      ease :"anticipate"
+     }}
      
      className="absolute bottom-0 left-0 w-[60vw] h-[60vw] max-w-[500px] max-h-[500px] bg-[rgb(255,180,220)] blur-[20vw] 2xl:blur-[10vw] opacity-80 rounded-full"></motion.div>
       {/* <svg>
@@ -56,22 +56,22 @@ export function Hero( ){
       
 
       <motion.div
-      //  initial={{
-      //   y:0,
+       initial={{
+        y:0,
         
-      //  }}
-      //  animate={{
-      //   y:400,
+       }}
+       animate={{
+        y:250,
        
-      //  }}
-      //  transition={{
-      //   duration:3,
-      //   // delay:1,
-      //   repeat : Infinity,
-      //   repeatDelay:2,
-      //   repeatType:"mirror",
-      //   ease :"anticipate"
-      //  }}
+       }}
+       transition={{
+        duration:4,
+        delay:1,
+        repeat : Infinity,
+        repeatDelay:2,
+        repeatType:"mirror",
+        ease :"anticipate"
+       }}
       className="absolute top-0 right-0 w-[60vw] h-[60vw] max-w-[500px] max-h-[500px] bg-[rgb(130,100,255)] blur-[20vw] 2xl:blur-[10vw]   opacity-80 rounded-full"></motion.div>
       
       {/* <Image 
@@ -108,10 +108,10 @@ export function Hero( ){
         }}
         transition={{
           duration:1.5,
-          // delay : 0.5,
+          delay : 0.5,
           ease : "anticipate"
         }}
-        className="w-full   flex overflow-hidden h-full justify-center scale-150 drop-shadow-[0px_0px_3px_rgba(16,39,108,0.8)] sm:scale-200 md:scale-250 lg:scale-400 my-48  items-center size-5">
+        className="w-full flex overflow-hidden h-full justify-center scale-100 drop-shadow-[0px_0px_3px_rgba(16,39,108,0.8)] sm:scale-200 md:scale-200 lg:scale-350 mt-50 mb-25  items-center size-5">
         <h1 className=  {`${tangerine.variable} text-8xl inline font-tangerine`}>P  
 
         <motion.h1 animate={{
@@ -152,7 +152,7 @@ export function Hero( ){
         {/* <h2 >
             Hi! I am  Amrit , A Mern Stack Dev based in Delhi
         </h2> */}
-        <TextGenerateEffect className={`${cormorant.variable}  font-cormorant italic`} words ="Hi! I am  Amrit , A Mern Stack Dev based in Delhi" />
+        <TextGenerateEffect className={`${cormorant.variable}  font-cormorant italic`} words ="Hi! I Am  Amrit , A Mern Stack Dev Based In Delhi" />
         <motion.div drag dragConstraints={{ 
             left : 0 , 
             right : 0, 
