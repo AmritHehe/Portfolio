@@ -2,7 +2,7 @@
 import React from "react";  
 //import { useState } from "react";
 import { Arrow } from "./arrow";
-import { Spotlight } from "./ui/spotlight";
+// import { Spotlight } from "./ui/spotlight";
 //import { Boxes} from "./ui/Background-boxes";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 import * as motion from "motion/react-client"
@@ -85,7 +85,7 @@ export function Hero( ){
       /> */}
     </div>
     <div className={`${cormorant.variable}  overflow-hidden flex flex-col items-center  sm:w-5/6 z-20`}>
-      <Spotlight className="top-0  md:top-40 h-screen " fill='black'/>
+      {/* <Spotlight className="top-0  md:top-40 h-screen " fill='black'/> */}
       {/* <Spotlight className="scale-x-[-1] top-0  md:top-40 h-screen" />
        */}
         {/* <p className="tracking-widest font-normal">SEO-optimized? Check. Responsive? Double check. Hooked? You bet!</p> */}
@@ -112,7 +112,8 @@ export function Hero( ){
           ease : "anticipate"
         }}
         className="w-full flex overflow-hidden h-full justify-center scale-100 drop-shadow-[0px_0px_3px_rgba(16,39,108,0.8)] sm:scale-200 md:scale-200 lg:scale-350 mt-50 mb-25  items-center size-5">
-        <h1 className=  {`${tangerine.variable} text-8xl inline font-tangerine`}>P  
+          <div>
+        <h1 className=  {`${tangerine.variable} text-8xl inline font-tangerine`}>P</h1>
 
         <motion.h1 animate={{
           x:[100,0],
@@ -133,7 +134,7 @@ export function Hero( ){
           duration:0.7,
           delay:1.2,
           ease:"anticipate"
-        }} className={`${tangerine.variable} text-7xl mr-1 font-tangerline inline-block`}>t</motion.h1>
+        }} className={`${tangerine.variable} text-7xl mr-1 font-tangerine inline-block`}>t</motion.h1>
         
         <motion.h1 animate={{
           y:[-100,0]
@@ -144,7 +145,7 @@ export function Hero( ){
           ease:"anticipate"
         }} className={`${cormorant.variable} text-6xl font-cormorant inline-block`}>foli</motion.h1>
           <h1 className={`${ysf.variable} text-5xl font-young font-thin inline-block`}>o</h1>
-        </h1>
+        </div>
         <br />
         </motion.div>
        
@@ -158,7 +159,7 @@ export function Hero( ){
             right : 0, 
             top : 0 , 
             bottom : 0
-        }}  whileHover = {{scale : 1.2}} className=" bg-gradient-to-r from-gray-800 to-cyan-700 p-2 rounded-2xl border-2 border-zinc-700 px-6 py-4 mt-10 ab"> <p className="inline-block">See My Work </p> <motion.div  whileHover={{rotate : 120}}  drag dragConstraints={{ 
+        }}  whileHover = {{scale : 1.2}} className=" bg-gradient-to-r from-gray-800 to-cyan-700 p-2 rounded-2xl border-2 border-zinc-700 px-6 py-4 mt-10 mb-5 ab"> <p className="inline-block">See My Work </p> <motion.div  whileHover={{rotate : 120}}  drag dragConstraints={{ 
             left : 0 , 
             right : 0, 
             top : 0 , 
