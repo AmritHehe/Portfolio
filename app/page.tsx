@@ -1,5 +1,3 @@
-"use client"
-
 //import Image from "next/image";
 import Hero from "./components/hero";
 // import Navbar from "./components/Navbar";
@@ -8,20 +6,8 @@ import Hero from "./components/hero";
 import Introduction from "./components/Introduction";
 import Projects from "./components/projectspage";
 import { Connect } from "./components/connect";
-import { useEffect } from "react";
 
 export default function Home() {
-  // In your _app.js or a top-level useEffect
-  useEffect(() => {
-    const setVh = () => {
-      document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
-    };
-
-    setVh();
-    window.addEventListener('resize', setVh);
-    return () => window.removeEventListener('resize', setVh);
-  }, []);
-
   return (
       <>
       <div className="overflow-x-hidden">
